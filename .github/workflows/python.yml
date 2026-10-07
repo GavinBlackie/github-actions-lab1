@@ -1,0 +1,17 @@
+name: Run A Python Application
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Python Version
+        run: python --version
+
+      - name: Show Git Version
+        run: git --version
+
+      - name: Show Files
+        run: ls -liha
